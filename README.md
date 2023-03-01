@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/jeremykenneth7/GoogleMapsAPI-ReactJS-Tailwind">
+    <img src="maps.png" alt="Logo" width="600" height="450">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">GoogleMapsAPI-ReactJS-Tailwind
+</h3>
 
-## Available Scripts
+  <p align="center">
+    Integrasi antara GoogleMaps dan ReactJS dengan menggunakan GoogleMapsAPI dan Tailwind
+    <br />
+    <a href="https://github.com/jeremykenneth7/GoogleMapsAPI-ReactJS-Tailwind"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/jeremykenneth7/GoogleMapsAPI-ReactJS-Tailwind">View Demo</a>
+    ·
+    <a href="https://github.com/jeremykenneth7/GoogleMapsAPI-ReactJS-Tailwind/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jeremykenneth7/GoogleMapsAPI-ReactJS-Tailwind/issues">Request Feature</a>
+  </p>
+</div>
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- GETTING STARTED -->
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get a local copy up and running follow these simple example steps.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/jeremykenneth7/GoogleMapsAPI-ReactJS-Tailwind.git
+   ```
+2. Install npm i @react-google-maps/api
 
-### `npm run build`
+3. Install Tailwind CSS 
+  npm install -D tailwindcss
+  npx tailwindcss init
+  
+4. Configure your template paths
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Add the paths to all of your template files in your tailwind.config.js file.
+tailwind.config.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+Add the Tailwind directives to your CSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+index.css
 
-### `npm run eject`
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+Start your build process
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+6. Run your build process with npm run start.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- CONTRIBUTING -->
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Code Splitting
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/GoogleMapsAPI-ReactJS-Tailwind`)
+3. Commit your Changes (`git commit -m 'Add some GoogleMapsAPI-ReactJS-Tailwind'`)
+4. Push to the Branch (`git push origin feature/GoogleMapsAPI-ReactJS-Tailwind`)
+5. Open a Pull Request
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- CONTACT -->
+## Contact
 
-### Advanced Configuration
+Jeremy Kenneth - jeremykenneth7@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Project Link: [https://github.com/jeremykenneth7/GoogleMapsAPI-ReactJS-Tailwind](https://github.com/jeremykenneth7/GoogleMapsAPI-ReactJS-Tailwind)
 
-### Deployment
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
