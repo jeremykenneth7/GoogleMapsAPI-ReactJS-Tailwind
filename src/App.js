@@ -39,7 +39,7 @@ function App() {
               </h2>
 
 
-              <LoadScript googleMapsApiKey={'YOUR_GOOGLEMAPS_API'}> // Masukkan Key Google Maps API
+              <LoadScript googleMapsApiKey={'YOUR_GOOGLEMAPS_API'}> 
                 <GoogleMap
                   mapContainerStyle={containerStyle}
                   center={center}
